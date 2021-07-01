@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  height: 100%;
+}
+
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1.5fr;
+      grid-template-columns: 1fr 1fr 1.5fr;
+  -ms-grid-rows: 1fr 4fr 4fr 3fr;
+      grid-template-rows: 1fr 4fr 4fr 3fr;
+      grid-template-areas: "main     main      header"  "main     main      candy" "nom      yum       candy" "footer   footer    candy";
+  height: 100vh;
+  margin: 2em;
+}
+
+main {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: main;
+  background-color: #dfdfdf;
+}
+
+.nom {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: nom;
+  background-color: #c2c2c2;
+}
+
+.yum {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: yum;
+  background-color: #5a5a5a;
+}
+
+.footer {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: footer;
+  color: #ffffff;
+  background-color: #030303;
+}
+
+header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: header;
+  background-color: #ff0000;
+}
+
+.candy {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 3;
+  grid-area: candy;
+  background-color: #1100ff;
+  background: url(../images/Pattern4.jpg) no-repeat;
+  background-size: cover;
+}
+/*# sourceMappingURL=main.css.map */
